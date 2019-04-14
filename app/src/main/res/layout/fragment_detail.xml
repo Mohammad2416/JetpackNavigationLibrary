@@ -3,23 +3,25 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".SecondFragment">
+             tools:context=".DetailFragment">
 
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <TextView
-                android:id="@+id/welcomeName"
+                android:id="@+id/detailTestView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Second Fragment"/>
+                android:text="@string/hello_blank_fragment"/>
 
         <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/btnGoToDetailFragment"
-        android:gravity="center"/>
-
+                android:id="@+id/btnGoToDetailFragmentLoop"
+                android:text="NewData"
+        />
 
     </RelativeLayout>
-
 
 </FrameLayout>
