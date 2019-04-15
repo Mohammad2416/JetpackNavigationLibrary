@@ -34,6 +34,13 @@ class DetailFragment : Fragment() {
             action.name = "Ehsan"
             findNavController().navigate(action)
         }
+
+
+        btnGoToMain.setOnClickListener {
+            val action = DetailFragmentDirections.actionDetailFragmentToMainFragment()
+
+            findNavController().navigate(action)
+        }
     }
 
 }
